@@ -2,6 +2,10 @@
 
 A full-featured blog application built with Next.js 14, MongoDB, and React Quill editor. This application provides a complete blogging solution with rich text editing, SEO-friendly URLs, and a modern admin dashboard.
 
+## 🚀 Live Demo
+
+Check out the deployed app here: [https://blog-app-nine-pi-69.vercel.app/](https://blog-app-nine-pi-69.vercel.app/)
+
 ## 🚀 Features
 
 ### Core Features
@@ -76,6 +80,14 @@ MONGODB_URI=mongodb://localhost:27017/blog-app
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 NEXT_PUBLIC_API_URL=http://localhost:3000
 ```
+
+> For production, use your MongoDB Atlas connection string and your deployed Vercel URL:
+>
+> ```env
+> MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/blog-app
+> NEXT_PUBLIC_SITE_URL=https://blog-app-nine-pi-69.vercel.app
+> NEXT_PUBLIC_API_URL=https://blog-app-nine-pi-69.vercel.app
+> ```
 
 ### 4. Run the Development Server
 
@@ -164,8 +176,9 @@ const modules = {
 2. Connect your repository to Vercel
 3. Add environment variables in Vercel dashboard:
    - `MONGODB_URI`: Your MongoDB connection string
-   - `NEXT_PUBLIC_SITE_URL`: Your production domain
-   - `NEXT_PUBLIC_API_URL`: Your production domain
+   - `NEXT_PUBLIC_SITE_URL`: `https://blog-app-nine-pi-69.vercel.app`
+   - `NEXT_PUBLIC_API_URL`: `https://blog-app-nine-pi-69.vercel.app`
+4. Deploy and your app will be live at [https://blog-app-nine-pi-69.vercel.app/](https://blog-app-nine-pi-69.vercel.app/)
 
 ### Deploy to Heroku
 
@@ -178,8 +191,8 @@ const modules = {
 
 ```env
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/blog-app
-NEXT_PUBLIC_SITE_URL=https://yourdomain.com
-NEXT_PUBLIC_API_URL=https://yourdomain.com
+NEXT_PUBLIC_SITE_URL=https://blog-app-nine-pi-69.vercel.app
+NEXT_PUBLIC_API_URL=https://blog-app-nine-pi-69.vercel.app
 ```
 
 ## 🔒 Security Features
@@ -197,39 +210,3 @@ The application is fully responsive and works on:
 - Tablets
 - Mobile phones
 - All modern browsers
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](../../issues) page
-2. Create a new issue with detailed information
-3. Contact the development team
-
-## 🎯 Roadmap
-
-Future features planned:
-
-- User authentication and authorization
-- Categories and tags for posts
-- Comments system
-- Image upload and management
-- Search functionality
-- RSS feeds
-- Analytics dashboard
-
----
-
-**Built with ❤️ using Next.js, MongoDB, and React**
