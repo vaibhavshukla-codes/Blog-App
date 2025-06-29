@@ -7,7 +7,7 @@ export async function GET() {
     await dbConnect();
 
     const posts = await Post.find({})
-      .select('title slug createdAt updatedAt')
+      .select('title slug content createdAt updatedAt')
       .sort({ createdAt: -1 });
 
     return NextResponse.json({ posts });
