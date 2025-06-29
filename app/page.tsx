@@ -87,9 +87,6 @@ export default async function Home() {
                   </div>
                   <Link href={`/post/${post.slug}`} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold text-base mt-auto group">
                     Read more
-                    <svg className="ml-2 w-5 h-5 inline-block align-middle group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </Link>
                 </div>
               </article>

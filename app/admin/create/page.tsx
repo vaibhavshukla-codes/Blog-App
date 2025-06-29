@@ -49,6 +49,8 @@ export default function CreatePost() {
     setError('');
 
     try {
+      console.log('Submitting post:', { title: title.trim(), content });
+      
       const response = await fetch('/api/posts/create', {
         method: 'POST',
         headers: {
@@ -60,14 +62,20 @@ export default function CreatePost() {
         }),
       });
 
+      console.log('Response status:', response.status);
+      console.log('Response headers:', response.headers);
+
       if (!response.ok) {
         const errorData = await response.json();
+        console.error('API Error:', errorData);
         throw new Error(errorData.error || 'Failed to create post');
       }
 
       const data = await response.json();
+      console.log('Success response:', data);
       router.push('/admin');
     } catch (err) {
+      console.error('Error creating post:', err);
       setError(err instanceof Error ? err.message : 'Failed to create post');
     } finally {
       setLoading(false);
